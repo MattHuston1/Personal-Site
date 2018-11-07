@@ -19,7 +19,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2vw 0 2vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
   height: 10vh;
 }
 
@@ -42,6 +43,14 @@
   background: white;
   width: 0%;
 }
+
+/* .scew{
+  top: 200px;
+  left: 0;
+  right: 0;
+  height: 50vh;
+  transform: skewY(4deg);
+} */
 
 .parallaxOne{
   background: url(./images/woodsTwo.gif) no-repeat center center fixed;
