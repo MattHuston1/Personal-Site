@@ -1,0 +1,107 @@
+/* .container{
+  max-width: 100%;
+  margin: 0 auto;
+  background: #f9f9f9;
+  font-size: 24px;
+  /* padding: 25px; */
+/* }  */
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  /* background-color: #f1f1f1; */
+  background: rgba(0, 0, 0, 0.5)
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2vw 0 2vw;
+  height: 10vh;
+}
+
+li{
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2vw;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: white;
+  width: 0%;
+}
+
+.parallaxOne{
+  background: url(./images/woodsTwo.gif) no-repeat center;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 2vw;
+}
+
+.parallaxTwo{
+  background: url(./images/water.gif) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 2vw;
+}
+
+.parallaxThree{
+  background: url(./images/mossyTrees.png) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 2vw;
+
+}
+
+h1{
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 6vw;
+  margin-left: 2vw;
+}
+
+h2{
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 4vw;
+  margin-left: 2vw;
+
+}
+
+p{
+  font-size: 1.5vw;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 1vw;
+}
