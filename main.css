@@ -23,7 +23,7 @@
   height: 10vh;
 }
 
-li{
+.nav a{
   color: white;
   font-family: 'Courier New', Courier, monospace;
   font-size: 2vw;
