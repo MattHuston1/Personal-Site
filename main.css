@@ -28,6 +28,7 @@
   color: white;
   font-family: 'Courier New', Courier, monospace;
   font-size: 2vw;
+  text-decoration: none;
 }
 
 /* The progress container (grey background) */
@@ -43,14 +44,22 @@
   background: white;
   width: 0%;
 }
-
-/* .scew{
-  top: 200px;
+/* 
+.scew{
+  position: relative;
   left: 0;
+  top: 0;
   right: 0;
+  bottom: 0;
   height: 50vh;
-  transform: skewY(4deg);
+  transform-origin: top right;
+  transform: skewY(-4deg);
+  background: gray;
 } */
+
+.unscew{
+  /* transform: skewY(4deg); */
+}
 
 .parallaxOne{
   background: url(./images/woodsTwo.gif) no-repeat center center fixed;
@@ -58,14 +67,38 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding-bottom: 2vw;
+  /* -webkit-transform: skewY(-4deg);
+  -moz-transform: skewY(-4deg);
+  -ms-transform: skewY(-4deg);
+  -o-transform: skewY(-4deg);
+  transform: skewY(-4deg); */
+  /* -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
+  clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%); */
+  overflow:hidden;
+  position: relative;
 }
+
+
+
+/* .parallaxOne:after{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:inherit;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: top right;
+  transform: skew(-4deg);
+} */
 
 .parallaxTwo{
   background: url(./images/water.gif) no-repeat center;
@@ -106,6 +139,7 @@ h2{
   font-family: 'Courier New', Courier, monospace;
   font-size: 4vw;
   margin-left: 2vw;
+  margin-bottom: 5vw;
 
 }
 
@@ -113,4 +147,5 @@ p{
   font-size: 1.5vw;
   font-family: 'Courier New', Courier, monospace;
   margin: 1vw;
+  /* color: white; */
 }
